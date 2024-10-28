@@ -1,0 +1,48 @@
+.button {
+    width: fit-content;
+    height: fit-content;
+}
+
+.container {
+    position: relative;
+    width: 46px;
+    height: 22px;
+    background-color: var(--color-green);
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 2px;
+    height: 18px;
+    aspect-ratio: 1/1;
+    background-color: white;
+    border-radius: 50%;
+    transition: left 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15), background-color 0.1s ease;
+
+    &.dark {
+        left: 26px;
+        background-color: black;
+    }
+}
+
+.icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    aspect-ratio: 1/1;
+
+    &.sun {
+        height: 18px;
+        left: 3px;
+    }
+
+    &.moon {
+        height: 16px;
+        right: 3px;
+    }
+}

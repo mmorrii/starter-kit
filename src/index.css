@@ -1,0 +1,47 @@
+@import "styles/null.css";
+@import "styles/normalize.css";
+
+:root {
+    --theme-text: white;
+    --theme-bg: black;
+
+    --color-green: #37E29D;
+    --color-red: #ff0000;
+    --color-red-10: rgba(255, 0, 0, 0.1);
+    --color-red-dark: #c71313;
+}
+
+[data-theme="light"] {
+    --theme-text: black;
+    --theme-bg: white;
+
+    --color-green: #0ac781;
+    --color-red: #ff0000;
+    --color-red-10: rgba(255, 0, 0, 0.1);
+    --color-red-dark: #c71313;
+}
+
+* {
+    transition-property: background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--theme-bg);
+    color: var(--theme-text);
+}
+
+a {
+    color: var(--color-green);
+
+    &:hover {
+        filter: brightness(125%);
+    }
+
+    &:active {
+        filter: brightness(80%);
+    }
+}
