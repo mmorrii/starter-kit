@@ -44,3 +44,7 @@ Starter template for building web applications with React.
 └── .env.example                   # Environment variables for local development (in dev process rename to `.env.local`)
 ... other configuration packages
 ```
+
+## Acknowledgement
+
+Thanks to [MineKing9534](https://github.com/MineKing9534) for `useRest` hook
